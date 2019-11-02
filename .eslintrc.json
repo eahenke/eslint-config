@@ -1,5 +1,5 @@
 {
-  "extends": "./eslint.js",
+  "extends": "./index.js",
   "rules": {
     "import/no-commonjs": 0
   }
