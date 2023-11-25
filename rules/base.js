@@ -1,5 +1,5 @@
 module.exports = {
-    parser: 'babel-eslint',
+    parser: '@babel/eslint-parser',
     extends: ['./a11y.js', './better-mutation.js', './import.js', './mocha.js', './prettier', './react.js'],
     env: {
         browser: true,
@@ -9,10 +9,15 @@ module.exports = {
         mocha: true
     },
     parserOptions: {
-        ecmaVersion: 2017,
+        ecmaVersion: 2020,
         sourceType: 'module',
         ecmaFeatures: {
             jsx: true
+        },
+        requireConfigFile: false,
+        babelOptions: {
+            babelrc: false,
+            configFile: false
         }
     },
     rules: {

@@ -1,5 +1,5 @@
 module.exports = {
-    extends: [require.resolve('eslint-config-prettier'), require.resolve('eslint-config-prettier/react')],
+    extends: [require.resolve('eslint-config-prettier')],
     plugins: ['prettier'],
     rules: {
         'prettier/prettier': [
